@@ -1,0 +1,36 @@
+\documentclass{book}
+
+% Page de garde université Toulouse (pre-2018)
+% http://tlsflyleaf.onada.fr
+\usepackage[ED=MITT-ImgInf, Ets=INP]{tlsflyleaf}
+
+\title{Titre de ma thèse}
+\author{Jean Biche}
+\defencedate{01/10/2019}
+\lab{Institut de Recherche en Informatique de Toulouse (UMR 5505)}
+%\cotutelle{Nom de l'établissement}
+
+% Directeur de thèse
+\nboss{2}
+\makesomeone{boss}{1}{Premier DIRECTEUR}{}{} % Sera affiché en premier
+\makesomeone{boss}{2}{Second DIRECTEUR}{}{}  % Sera affiché en second
+
+% Rapporteurs
+\nreferee{2}
+\makesomeone{referee}{1}{Premier RAPPORTEUR}{}{}
+\makesomeone{referee}{2}{Second RAPPORTEUR}{}{}
+
+% Jury
+\njudge{5}
+\makesomeone{judge}{1}{Premier MEMBRE}{Professeur d'Université}{Président du Jury}
+\makesomeone{judge}{2}{Second MEMBRE}{Professeur d'Université}{Membre du Jury}
+\makesomeone{judge}{3}{Troisième MEMBRE}{Chargé de Recherche}{Membre du Jury}
+\makesomeone{judge}{4}{Quatrième MEMBRE}{Chargé de Recherche}{Membre du Jury}
+\makesomeone{judge}{5}{Cinquième MEMBRE}{Chargé de Recherche}{Membre du Jury}
+
+% ============================================================
+
+\begin{document}
+	\makeflyleaf%
+	\input{src/content.tex}
+\end{document}
